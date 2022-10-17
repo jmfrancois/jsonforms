@@ -107,6 +107,7 @@ class TableArrayControl extends React.Component<ArrayControlProps & VanillaRende
         <header>
           <label className={labelClass}>{label}</label>
           <button
+            type="button"
             className={buttonClass}
             onClick={addItem(path, createDefaultValue(schema))}
           >
@@ -205,6 +206,7 @@ class TableArrayControl extends React.Component<ArrayControlProps & VanillaRende
                       </td>
                       <td>
                         <button
+                          type="button"
                           aria-label={`Delete`}
                           onClick={() => {
                             if (window.confirm('Are you sure you wish to delete this item?')) {

@@ -75,6 +75,7 @@ export const ArrayControl = ({
       <header>
         <label className={labelClass}>{label}</label>
         <button
+            type="button"
             className={buttonClassAdd}
             onClick={addItem(path, createDefaultValue(schema))}
         >Add to {label}
@@ -98,18 +99,21 @@ export const ArrayControl = ({
                 />                
                 <div className={childControlsClass}>
                   <button
+                    type="button"
                     className={buttonClassUp}
               	    aria-label={`Up`}
                     onClick={() => {
                       moveUp(path,index)();
                   }}>Up</button>
                   <button
+                    type="button"
                     className={buttonClassDown}
                     aria-label={`Down`}
                     onClick={() => {
                       moveDown(path,index)();
                   }}>Down</button>
                   <button
+                    type="button"
                     className={buttonClassDelete}
                     aria-label={`Delete`}
                     onClick={() => {
